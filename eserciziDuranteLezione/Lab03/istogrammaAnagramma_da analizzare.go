@@ -34,7 +34,7 @@ func main() {
 	lettere := quali(riga)
 	fmt.Println(anagrammi(riga, riga2))
 	lettere2 := []string{}
-	for key, _ := range lettere {
+	for key := range lettere {
 		lettere2 = append(lettere2, key)
 	}
 	sort.Strings(lettere2)
